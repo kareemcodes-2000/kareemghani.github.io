@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website to showcase projects and introduce myself.">
+  <title>Your Name | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    header {
+      background: #2FE068;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    header nav ul li {
+      margin: 0 15px;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    #projects .project-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    #projects .project {
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #projects .project h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Muhammad Kareem Bin Abdul Ghani</h1>
+      <p>Aspiring Data Analyst | Machine Learning Enthusiast</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I am a data enthusiast with experience in Python, R, and SQL. I enjoy solving complex problems using data and building machine learning models to derive insights. I'm currently a student at SMU, majoring in Data Science and Analytics. I aspire to be a data analyst in future and possibly a data scientist! Feel free to explore my projects below!</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Project 1: Lazy Calendar</h3>
+          <p>I made this Calendar because I was finding it really hard to keep up with my tasks. I found it tedious to manually input into my Google Calendar each task. So I made an application that did it for me! It also gave me reminders and told me what tasks I have.</p>
+          <p>Language Used: Python (Google Authentication, Google Calendar API, kivvy, dataparse</p>
+          <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project">
+          <h3>Project 2: Title</h3>
+          <p>Brief description of the project. Include tools, languages, and frameworks used.</p>
+          <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to reach out on LinkedIn or send me an email.</p>
+      <a href="mailto:kareemghani2000@gmail.com">kareemghani2000@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Muhammad Kareem Bin Abdul Ghani. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
