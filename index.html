@@ -71,22 +71,36 @@
       transition: border-bottom 0.3s ease;
     }
 
-    .section {
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       padding: 80px 0;
       text-align: center;
+    }
+
+    .about-text, .about-img {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .about-text {
+      padding: 20px;
+    }
+
+    .about-img img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
     }
 
     h2 {
       font-size: 2.5rem;
       margin-bottom: 40px;
       color: #1ABC9C;
-    }
-
-    #about img {
-      max-width: 300px;
-      transform: scale(1.5);
-      border-radius: 10px;
-      margin-top: 20px;
+      text-align: center;
+      width: 100%;
     }
 
     #projects .project-list {
@@ -193,6 +207,10 @@
       #projects .project h3 {
         font-size: 1.5rem;
       }
+
+      .about-section {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -211,12 +229,14 @@
     </div>
   </header>
 
-  <section id="about" class="section">
-    <div class="container">
+  <section id="about" class="about-section">
+    <div class="about-text">
       <h2>About Me</h2>
-      <img src="photo.jpg" alt="Muhammad Kareem Bin Abdul Ghani", >
       <p>Hello! I am a data enthusiast with experience in Python, R, and SQL. I enjoy solving complex problems using data and building machine learning models to derive insights. I'm currently a student at Singapore Management University, with a Bachelor of Science in Economics and double majoring in Data Science and Analytics. I aspire to be a data analyst in future and possibly a data scientist! Feel free to explore my projects below!</p>
-      
+    </div>
+    
+    <div class="about-img">
+      <img src="photo.jpg" alt="Muhammad Kareem Bin Abdul Ghani">
     </div>
   </section>
 
