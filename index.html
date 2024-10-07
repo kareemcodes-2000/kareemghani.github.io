@@ -116,6 +116,7 @@
       border-radius: 10px;
       box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
     }
 
     #projects .project:hover {
@@ -133,6 +134,13 @@
       font-size: 1rem;
       color: #666;
       margin-bottom: 25px;
+    }
+
+    #projects .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     #projects a {
@@ -184,7 +192,6 @@
       font-size: 0.9rem;
     }
 
-    /* Responsive Design */
     @media (max-width: 768px) {
       header h1 {
         font-size: 2.2rem;
@@ -196,44 +203,6 @@
 
       #projects .project-list {
         grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 576px) {
-      body {
-        font-size: 0.9rem;
-      }
-
-      .container {
-        width: 90%;
-      }
-
-      header {
-        padding: 30px 0;
-      }
-
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
-
-      #projects .project {
-        padding: 20px;
-      }
-
-      h2 {
-        font-size: 2rem;
-      }
-
-      #projects .project h3 {
-        font-size: 1.5rem;
-      }
-
-      .about-section {
-        flex-direction: column;
       }
     }
   </style>
@@ -256,11 +225,10 @@
   <section id="about" class="about-section">
     <div class="about-text">
       <h2>About Me</h2>
-      <p>Hello! I'm Kareem, a huge data enthusiast with experience in Python, R, and SQL. I enjoy solving complex problems using data and building machine learning models to derive insights. I'm currently a student at Singapore Management University, with a Bachelor of Science in Economics and double majoring in Data Science and Analytics. I aspire to be a data analyst in future and possibly a data scientist! Feel free to explore my projects below!</p>
+      <p>Hello! I'm Kareem, a huge data enthusiast with experience in Python, R, and SQL. I enjoy solving complex problems using data and building machine learning models to derive insights. I'm currently a student at Singapore Management University, majoring in Data Science and Analytics. I aspire to be a data analyst in the future and possibly a data scientist! Feel free to explore my projects below!</p>
       <p>Skills: Python, R, SQL, PowerBI, Tableau</p>
-      <p>Also, I am from SMU, the picture beside me was when I went on went on Exchange to Universitas Gadjah Mada!</p>
+      <p>Also, I am from SMU, and the picture beside me is from when I went on Exchange to Universitas Gadjah Mada!</p>
     </div>
-    
     <div class="about-img">
       <img src="photo.jpg" alt="Muhammad Kareem Bin Abdul Ghani">
     </div>
@@ -271,43 +239,23 @@
       <h2>Projects</h2>
       <div class="project-list">
         <div class="project">
-          <h3>Project 1: Lazy Calendar</h3>
-          <p>I made this Calendar because I was finding it really hard to keep up with my tasks. I found it tedious to manually input into my Google Calendar each task. So I made an application that did it for me! It also gave me reminders and told me what tasks I have.</p>
-          <p>Language Used: Python (Google Authentication, Google Calendar API, kivvy, dataparse)</p>
+          <img src="movie_recommender.png" alt="Movie Recommender Project">
+          <h3>Project 1: Movie Recommender System</h3>
+          <p>A Streamlit application that recommends movies based on user ratings and genre similarity. It uses collaborative filtering and content-based filtering techniques to suggest movies that align with user preferences.</p>
+          <p>Language Used: Python (Streamlit, scikit-learn, surprise)</p>
+          <a href="https://github.com/kareemcodes-2000/Movie-Recommender-System" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project">
+          <img src="lazy_calendar.png" alt="Lazy Calendar Project">
+          <h3>Project 2: Lazy Calendar</h3>
+          <p>I made this calendar because I found it tedious to manually input tasks into my Google Calendar. So I built an application that automates it for me! It also sends reminders and keeps track of my tasks.</p>
+          <p>Language Used: Python (Google Authentication, Google Calendar API, kivy, dateparser)</p>
           <a href="https://github.com/kareemcodes-2000/Lazy-Calendar" target="_blank">View on GitHub</a>
         </div>
 
         <div class="project">
-          <h3>Project 2: Machine Learning Application On HDB Housing Prices</h3>
-          <p>Through the usage of R, I used Lasso and Ridge Regression Models, Linear Regression and XGBoost Models to create a model to predict the HDB Housing Price. From this I learnt how to apply models to real life data.</p>
-          <p>Language Used: R </p>
-          <a href="https://github.com/kareemcodes-2000/Machine-Learning-Model-to-Predict-Housing-Prices" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>If you'd like to get in touch, feel free to reach out via email or LinkedIn below.</p>
-      <p>Email: kareemghani2000@gmail.com</p>
-      <p>Or click any of the links below!</p>
-      <div class="contact-icons">
-        <a href="mailto:kareemghani2000@gmail.com" target="_blank">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/muhdkareembabdulghani" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Muhammad Kareem Bin Abdul Ghani. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-</html>
+          <h3>Project 3: Machine Learning Application on HDB Housing Prices</h3>
+          <p>Through R, I utilized Lasso and Ridge Regression Models, Linear Regression, and XGBoost Models to predict HDB Housing Prices. This project enhanced my ability to apply machine learning models to real-life data.</p>
+          <p>Language Used: R</p>
+          <a href="https://github
